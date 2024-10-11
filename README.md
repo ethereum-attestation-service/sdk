@@ -228,7 +228,7 @@ console.log('Transaction receipt:', transaction.receipt);
 
 The `revoke` function allows you to revoke an on-chain attestation. This function takes an object with the following properties:
 
-- `schema`: The UID of the schema for which the attestation is being revoke.
+- `schema`: The UID of the schema for which the attestation is being revoked.
 - `data`: An object containing the following properties:
   - `uid`: The UID of the attestation to revoke.
   - `value`: (Optional) The ETH value that is being sent with the revocation.
@@ -374,7 +374,7 @@ console.log('Transaction receipt:', transaction.receipt);
 
 The `revokeByDelegation` function allows you to create a delegated on-chain revocation for a specific attestation. This function takes an object with the following properties:
 
-- `schema`: The UID of the schema for which the attestation is being revoke.
+- `schema`: The UID of the schema for which the attestation is being revoked.
 - `data`: An object containing the following properties:
   - `uid`: The UID of the attestation to revoke.
   - `value`: (Optional) The ETH value that is being sent with the revocation.
@@ -446,7 +446,7 @@ const transaction = await eas.timestamp(uid);
 await transaction.wait();
 ```
 
-To create a timestamp for a any piece of data, you can use the `timestamp` function provided by the EAS SDK. Here's an example:
+To create a timestamp for any piece of data, you can use the `timestamp` function provided by the EAS SDK. Here's an example:
 
 ```javascript
 import { EAS } from '@ethereum-attestation-service/eas-sdk';
